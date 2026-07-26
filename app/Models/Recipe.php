@@ -22,6 +22,7 @@ class Recipe extends Model
         'ingredients',
         'instructions',
         'tags',
+        'source_url',
     ];
 
     // JSON columns are automatically decoded to arrays / encoded back to JSON.
@@ -81,6 +82,7 @@ class Recipe extends Model
             'ingredients' => $this->ingredients,
             'instructions' => $this->instructions,
             'tags' => $this->tags,
+            'sourceUrl' => $this->source_url,
         ];
     }
 }
